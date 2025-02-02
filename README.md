@@ -3,6 +3,7 @@
 # HERE platform
 - It is necessary to have an app 
 - No payment details required for the free instance
+- Documentation is very good it also contains info about Mapping concepts
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
