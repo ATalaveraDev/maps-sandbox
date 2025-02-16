@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angula
 
 import '@here/maps-api-for-javascript';
 import { RoutesService } from '../../services/routes.service';
+import { API_KEY } from '../../../credentials';
 
 @Component({
   selector: 'app-here-maps',
@@ -21,7 +22,7 @@ export class HereMapsComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     if (!this.map && this.mapDiv) {
       const platform = new H.service.Platform({
-        apikey: ''
+        apikey: API_KEY
       });
       const layers = platform.createDefaultLayers();
       this.map = new H.Map(
